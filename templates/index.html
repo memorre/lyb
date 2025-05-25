@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Guestbook</title>
+    <style>
+        body { font-family: sans-serif; margin: 40px; }
+        .msg { border-bottom: 1px solid #ccc; margin-bottom: 20px; padding-bottom: 10px;}
+    </style>
+</head>
+<body>
+    <h1>📖 轻量留言板 Demo</h1>
+    <form method="POST">
+        <input name="name" placeholder="你的名字" required>
+        <br>
+        <textarea name="message" placeholder="留言内容" rows="3" cols="40" required></textarea>
+        <br>
+        <button type="submit">提交留言</button>
+    </form>
+    <h2>历史留言</h2>
+    {% for name, message, created_at in messages %}
+        <div class="msg">
+            <b>{{ name }}</b> <i>{{ created_at }}</i><br>
+            {{ message }}
+        </div>
+    {% else %}
+        <p>暂无留言。</p>
+    {% endfor %}
+</body>
+</html>
