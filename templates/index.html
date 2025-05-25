@@ -1,58 +1,107 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2575.6">
-  <style type="text/css">
-    span.s1 {font-kerning: none}
+  <meta charset="UTF-8">
+  <title>Bonsoir 沛沛</title>
+  <style>
+    html,
+    body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      min-height: 100vh;
+      background: url('{{ url_for(' static', filename=' oui.png') }}') no-repeat center center fixed;
+      background-size: cover;
+      font-family: sans-serif;
+    }
+
+    .content-box {
+      max-width: 700px;
+      margin: 0 auto;
+      background: rgba(255, 255, 255, 0.85);
+      border-radius: 20px;
+      box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.18);
+      padding: 2em;
+      margin-top: 3em;
+    }
+
+    @media (max-width: 800px) {
+      .content-box {
+        max-width: 95vw;
+        padding: 1em;
+        margin-top: 1em;
+      }
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 4em;
+      font-weight: bold;
+      letter-spacing: 0.04em;
+      margin-bottom: 0.5em;
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 1.5em;
+      margin-top: 2em;
+    }
+
+    .msg {
+      border-bottom: 1px solid #ccc;
+      margin-bottom: 20px;
+      padding-bottom: 10px;
+    }
+
+    form input,
+    form textarea {
+      width: 100%;
+      margin-bottom: 1em;
+      font-size: 1.1em;
+      padding: 0.5em;
+      border: 1px solid #aaa;
+      border-radius: 5px;
+    }
+
+    button {
+      font-size: 1.1em;
+      padding: 0.5em 1.2em;
+      border: none;
+      border-radius: 6px;
+      background-color: #333;
+      color: white;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #555;
+    }
   </style>
 </head>
+
 <body>
-<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Apple Color Emoji'; -webkit-text-stroke: #000000"><span class="s1">&lt;head&gt;</span></h1>
-<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Apple Color Emoji'; -webkit-text-stroke: #000000"><span class="s1"><span class="Apple-converted-space">    </span>&lt;meta charset="UTF-8"&gt;</span></h1>
-<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Apple Color Emoji'; -webkit-text-stroke: #000000"><span class="s1"><span class="Apple-converted-space">    </span>&lt;title&gt;BONSOIR 沛沛&lt;/title&gt;</span></h1>
-<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Apple Color Emoji'; -webkit-text-stroke: #000000"><span class="s1"><span class="Apple-converted-space">    </span>&lt;style&gt;</span></h1>
-<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Apple Color Emoji'; -webkit-text-stroke: #000000"><span class="s1"><span class="Apple-converted-space">        </span>html, body {</span></h1>
-<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Apple Color Emoji'; -webkit-text-stroke: #000000"><span class="s1"><span class="Apple-converted-space">            </span>height: 100%;</span></h1>
-<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Apple Color Emoji'; -webkit-text-stroke: #000000"><span class="s1"><span class="Apple-converted-space">            </span>margin: 0;</span></h1>
-<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Apple Color Emoji'; -webkit-text-stroke: #000000"><span class="s1"><span class="Apple-converted-space">            </span>padding: 0;</span></h1>
-<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Apple Color Emoji'; -webkit-text-stroke: #000000"><span class="s1"><span class="Apple-converted-space">        </span>}</span></h1>
-<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Apple Color Emoji'; -webkit-text-stroke: #000000"><span class="s1"><span class="Apple-converted-space">        </span>body {</span></h1>
-<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Apple Color Emoji'; -webkit-text-stroke: #000000"><span class="s1"><span class="Apple-converted-space">            </span>min-height: 100vh;</span></h1>
-<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Apple Color Emoji'; -webkit-text-stroke: #000000"><span class="s1"><span class="Apple-converted-space">            </span>background: url('{{ url_for('static', filename='oui.png') }}') no-repeat center center fixed;</span></h1>
-<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Apple Color Emoji'; -webkit-text-stroke: #000000"><span class="s1"><span class="Apple-converted-space">            </span>background-size: cover;</span></h1>
-<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Apple Color Emoji'; -webkit-text-stroke: #000000"><span class="s1"><span class="Apple-converted-space">        </span>}</span></h1>
-<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Apple Color Emoji'; -webkit-text-stroke: #000000"><span class="s1"><span class="Apple-converted-space">        </span>.content-box {</span></h1>
-<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Apple Color Emoji'; -webkit-text-stroke: #000000"><span class="s1"><span class="Apple-converted-space">            </span>max-width: 700px;</span></h1>
-<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Apple Color Emoji'; -webkit-text-stroke: #000000"><span class="s1"><span class="Apple-converted-space">            </span>margin: 0 auto;</span></h1>
-<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Apple Color Emoji'; -webkit-text-stroke: #000000"><span class="s1"><span class="Apple-converted-space">            </span>background: rgba(255,255,255,0.85);</span></h1>
-<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Apple Color Emoji'; -webkit-text-stroke: #000000"><span class="s1"><span class="Apple-converted-space">            </span>border-radius: 20px;</span></h1>
-<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Apple Color Emoji'; -webkit-text-stroke: #000000"><span class="s1"><span class="Apple-converted-space">            </span>box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.18);</span></h1>
-<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Apple Color Emoji'; -webkit-text-stroke: #000000"><span class="s1"><span class="Apple-converted-space">            </span>padding: 2em;</span></h1>
-<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Apple Color Emoji'; -webkit-text-stroke: #000000"><span class="s1"><span class="Apple-converted-space">            </span>margin-top: 3em;</span></h1>
-<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Apple Color Emoji'; -webkit-text-stroke: #000000"><span class="s1"><span class="Apple-converted-space">        </span>}</span></h1>
-<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Apple Color Emoji'; -webkit-text-stroke: #000000"><span class="s1"><span class="Apple-converted-space">        </span>@media (max-width: 800px) {</span></h1>
-<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Apple Color Emoji'; -webkit-text-stroke: #000000"><span class="s1"><span class="Apple-converted-space">            </span>.content-box {</span></h1>
-<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Apple Color Emoji'; -webkit-text-stroke: #000000"><span class="s1"><span class="Apple-converted-space">                </span>max-width: 98vw;</span></h1>
-<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Apple Color Emoji'; -webkit-text-stroke: #000000"><span class="s1"><span class="Apple-converted-space">                </span>padding: 1em;</span></h1>
-<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Apple Color Emoji'; -webkit-text-stroke: #000000"><span class="s1"><span class="Apple-converted-space">                </span>margin-top: 1em;</span></h1>
-<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Apple Color Emoji'; -webkit-text-stroke: #000000"><span class="s1"><span class="Apple-converted-space">            </span>}</span></h1>
-<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Apple Color Emoji'; -webkit-text-stroke: #000000"><span class="s1"><span class="Apple-converted-space">        </span>}</span></h1>
-<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Apple Color Emoji'; -webkit-text-stroke: #000000"><span class="s1"><span class="Apple-converted-space">        </span>h1 {</span></h1>
-<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Apple Color Emoji'; -webkit-text-stroke: #000000"><span class="s1"><span class="Apple-converted-space">            </span>text-align: center;</span></h1>
-<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Apple Color Emoji'; -webkit-text-stroke: #000000"><span class="s1"><span class="Apple-converted-space">            </span>font-size: 4em;<span class="Apple-converted-space">    </span>/* 超大字号！ */</span></h1>
-<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Apple Color Emoji'; -webkit-text-stroke: #000000"><span class="s1"><span class="Apple-converted-space">            </span>font-weight: bold;</span></h1>
-<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Apple Color Emoji'; -webkit-text-stroke: #000000"><span class="s1"><span class="Apple-converted-space">            </span>letter-spacing: 0.04em;</span></h1>
-<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Apple Color Emoji'; -webkit-text-stroke: #000000"><span class="s1"><span class="Apple-converted-space">            </span>margin-bottom: 0.3em;</span></h1>
-<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Apple Color Emoji'; -webkit-text-stroke: #000000"><span class="s1"><span class="Apple-converted-space">        </span>}</span></h1>
-<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Apple Color Emoji'; -webkit-text-stroke: #000000"><span class="s1"><span class="Apple-converted-space">        </span>h2 { text-align: center; }</span></h1>
-<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Apple Color Emoji'; -webkit-text-stroke: #000000"><span class="s1"><span class="Apple-converted-space">        </span>.msg { border-bottom: 1px solid #ccc; margin-bottom: 20px; padding-bottom: 10px;}</span></h1>
-<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Apple Color Emoji'; -webkit-text-stroke: #000000"><span class="s1"><span class="Apple-converted-space">        </span>form input, form textarea { width: 100%; margin-bottom: 0.8em; font-size: 1.1em; }</span></h1>
-<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Apple Color Emoji'; -webkit-text-stroke: #000000"><span class="s1"><span class="Apple-converted-space">        </span>button { font-size: 1.1em; padding: 0.4em 1.2em;}</span></h1>
-<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Apple Color Emoji'; -webkit-text-stroke: #000000"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/style&gt;</span></h1>
-<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Apple Color Emoji'; -webkit-text-stroke: #000000"><span class="s1">&lt;/head&gt;</span></h1>
+  <div class="content-box">
+    <h1>Bonsoir 沛沛</h1>
+    <form method="POST">
+      <input name="name" placeholder="你的名字" required>
+      <textarea name="message" placeholder="留言内容" rows="3" required></textarea>
+      <button type="submit">提交留言</button>
+    </form>
+
+    <h2>历史留言</h2>
+    {% for name, message, created_at in messages %}
+    <div class="msg">
+      <b>{{ name }}</b> <i>{{ created_at }}</i><br>
+      {{ message }}
+    </div>
+    {% else %}
+    <p>暂无留言。</p>
+    {% endfor %}
+  </div>
 </body>
+
 </html>
